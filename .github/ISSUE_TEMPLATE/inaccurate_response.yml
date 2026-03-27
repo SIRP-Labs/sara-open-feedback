@@ -1,0 +1,49 @@
+name: Inaccurate Response
+description: Report incorrect, misleading, or fabricated information from SARA
+title: "[Accuracy] "
+labels: ["accuracy", "bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        SARA's accuracy is critical for security work. If you received incorrect threat intel, a wrong CVE description, fabricated IOCs, or misleading analysis — please report it here.
+
+  - type: textarea
+    id: query
+    attributes:
+      label: What did you ask?
+      description: The exact query or conversation context.
+      placeholder: "I asked: 'Analyze CVE-2024-3400'"
+    validations:
+      required: true
+
+  - type: textarea
+    id: response
+    attributes:
+      label: What did SARA respond?
+      description: The inaccurate part of SARA's response.
+    validations:
+      required: true
+
+  - type: textarea
+    id: correct
+    attributes:
+      label: What is the correct information?
+      description: The accurate information with source/reference if available.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: type
+    attributes:
+      label: Type of inaccuracy
+      options:
+        - Wrong CVE details (description, affected product, CVSS)
+        - Fabricated/hallucinated information
+        - Incorrect threat attribution
+        - Wrong detection rule (Sigma, KQL, YARA)
+        - Incorrect remediation guidance
+        - Outdated information
+        - Other
+    validations:
+      required: true

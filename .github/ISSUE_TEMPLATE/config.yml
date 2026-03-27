@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Feature Requests & Ideas
+    url: https://github.com/SIRP-Labs/sara-open-feedback/discussions/categories/feature-requests
+    about: Suggest and discuss new features
+  - name: General Q&A
+    url: https://github.com/SIRP-Labs/sara-open-feedback/discussions/categories/q-a
+    about: Ask questions about using SARA Open
+  - name: Security Vulnerability
+    url: mailto:security@sirp.io
+    about: Report security vulnerabilities privately via email

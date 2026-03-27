@@ -1,0 +1,21 @@
+title: "[Feature] "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Share your feature idea with the community! Upvote ideas you'd like to see built.
+
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would you like SARA to do?
+      placeholder: "It would be great if SARA could..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Why is this useful?
+      placeholder: "In my SOC workflow, I often need to..."
